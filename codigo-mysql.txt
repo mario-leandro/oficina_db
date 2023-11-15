@@ -1,0 +1,26 @@
+CREATE DATABASE oficina;
+
+USE oficina;
+
+CREATE TABLE carro(
+	id_carro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    marca_carro VARCHAR(255) NOT NULL,
+    modelo_carro VARCHAR(255) NOT NULL,
+    cor_carro VARCHAR(255) NOT NULL,
+    placa_carro VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE cliente(
+	id_cliente INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome_cliente VARCHAR(255) NOT NULL,
+    cidade_cliente VARCHAR(255) NOT NULL,
+    estado_cliente VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE produto(
+	id_produto INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome_produto VARCHAR(255) NOT NULL,
+    preco_produto FLOAT(6,2) NOT NULL,
+    qtd_produto INT NOT NULL,
+    data_produto DATE NOT NULL
+);

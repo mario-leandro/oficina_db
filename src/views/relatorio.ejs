@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/relatorio.css">
+    <title>Relatório</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <h2>Relatório do veículo</h2>
+
+            <% rows.forEach((item) => { %>
+            <tr>
+                <th>Cliente:</th>
+                <td><%= item.nome_cliente %></td>
+                <th>Data:</th>
+                <td><%= item.data_compra %>></td>
+            </tr>
+
+            <tr>
+                <th>Cidade:</th>
+                <td><%= item.cidade_cliente %></td>
+                <th>Estado:</th>
+                <td><%= item.estado_cliente %></td>
+            </tr>
+
+            <tr>
+                <th>Carro:</th>
+                <td><%= item.modelo_carro %></td>
+                <th>Cor:</th>
+                <td><%= item.cor_carro %></td>
+            </tr>
+
+            <tr>
+                <th>Placa:</th>
+                <td><%= item.placa_carro %></td>
+            </tr>
+
+            <tr>
+                <th>Quantidade</th>
+                <th>Serviços/Produtos</th>
+                <th>Valor Unitário</th>
+                <th>Total</th>
+            </tr>
+
+            <tr>
+                <td><%= item.qtd_produto %></td>
+                <td><%= item.nome_produto %>/td>
+                <td><%= item.preco_produto %></td>
+            </tr>
+            <% }) %>
+        </table>
+    </div>
+</body>
+</html>

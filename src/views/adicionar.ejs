@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/adicionar.css" />
+    <title>Adicionar</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/adicionar" method="post">
+        <h2>Adicionar Informações</h2>
+
+        <div class="informacao">
+          <div class="info-carro">
+            <div class="inputs">
+              <label for="marca">Marca</label>
+              <input 
+              type="text" 
+              name="marca_carro" 
+              id="marca" 
+              required />
+
+              <label for="modelo">Modelo</label>
+              <input 
+              type="text" 
+              name="modelo_carro" 
+              id="modelo" 
+              required />
+
+              <label for="cor">Cor</label>
+              <input 
+              type="text" 
+              name="cor_carro" 
+              id="cor" 
+              required />
+
+              <label for="placa">Placa</label>
+              <input 
+              type="text" 
+              name="placa_carro" 
+              id="placa" 
+              required />
+            </div>
+          </div>
+
+          <div class="info-cliente">
+            <div class="inputs">
+              <label for="cliente">Cliente</label>
+              <input 
+              type="text" 
+              id="cliente" 
+              name="nome_cliente" 
+              required />
+
+              <label for="telefone">Telefone ou Celular</label>
+              <input
+                type="text"
+                id="telefone"
+                nome="telefone_cliente"
+                required
+              />
+
+              <label for="cidade">Cidade</label>
+              <input 
+              type="text" 
+              id="cidade" 
+              name="cidade_cliente" 
+              required />
+
+              <label for="estado">Estado</label>
+              <input 
+              type="text" 
+              id="estado" 
+              name="estado_cliente" 
+              required />
+            </div>
+          </div>
+        </div>
+
+        <div class="botao">
+          <button type="submit">Adicionar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
